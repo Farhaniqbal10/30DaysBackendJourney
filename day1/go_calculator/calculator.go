@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//rumus faktorial
 func faktorial(n int) int {
 	result := 1 
 	for i := 1; i <= n; i++{
