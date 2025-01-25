@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+//rumus faktorial
 func faktorial(n int) int {
 	result := 1 
 	for i := 1; i <= n; i++{
@@ -9,7 +9,7 @@ func faktorial(n int) int {
 	}
 	return result
 }
-
+//menampilkan hasil rumus faktorial
 func main() {
 	var num int
 
