@@ -11,6 +11,8 @@ func faktorial(n int) int {
 	return result
 }
 
+//function tampilan kalkulator sederhana
+
 func main(){
 	var num1, num2 float64
 	var operator string
