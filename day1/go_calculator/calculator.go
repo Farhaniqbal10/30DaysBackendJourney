@@ -39,7 +39,9 @@ func main(){
 	
 		fmt.Println("masukan angka kedua")
 		fmt.Scanln(&num2)
-	
+
+		//switch case function 
+		
 		switch operator {
 		case "+" :
 			fmt.Printf("hasil akhir : %.2f\n", num1+num2)
