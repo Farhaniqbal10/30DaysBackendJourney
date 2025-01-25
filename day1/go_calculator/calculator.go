@@ -21,7 +21,7 @@ func main(){
 	fmt.Println("kalkulator sederhana")
 	fmt.Println("masukan operator atau pilih ! untuk faktorial (+,-,*,/,!) ")
 	fmt.Scanln(&operator)
-	
+	// if statement function
 	if operator == "!" {
 		fmt.Println("masukan angka yang ingin difaktorialkan :")
 		fmt.Scanln(&num)
