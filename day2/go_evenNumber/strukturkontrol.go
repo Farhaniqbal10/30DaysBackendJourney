@@ -31,7 +31,7 @@ func main () {
 		}
 	}
 
-	//contoh struktur kontrol switch
+	//contoh struktur kontrol switch case
 	hari := 3
 	fmt.Print("\nHari ke-", hari, " adalah ")
 	switch hari {
