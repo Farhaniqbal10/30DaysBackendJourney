@@ -15,11 +15,12 @@ func sapa(nama string) string {
 }
 
 func main(){
+	// Tipe data dan variabel
 
-	var nama string = "farhan"
-	umur := 23
-	var tinggi float64 = 170.5
-	var aktif bool = true
+	var nama string = "farhan"  		//tipe data string
+	umur := 23				//tipe data int
+	var tinggi float64 = 170.5		//tipe data float
+	var aktif bool = true			//tipe data boolean
 
 
 	fmt.Println("nama :", nama)
