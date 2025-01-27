@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
-func luasPersegiPanjang(lebar float64, panjang float64){
+// Fungsi untuk menghitung luas persegi panjang
+
+func luasPersegiPanjang(lebar float64, panjang float64) float64 {
 	return lebar*panjang
 }
 
 func sapa(nama string) string {
-	return "halo" + nama + "selamat datang di program go"
+	return "halo " + nama + " selamat datang di program go"
 }
 
 func main(){
@@ -28,7 +30,7 @@ func main(){
 	luas := luasPersegiPanjang(lebar, panjang)
 	fmt.Println("luas persegi panjang :", luas)
 
-	fmt.Println(sapa)
+	fmt.Println(sapa(nama))
 
 
 	
