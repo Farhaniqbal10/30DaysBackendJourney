@@ -17,7 +17,7 @@ func main () {
 		fmt.Println("Grade: D")
 	}
 
-
+	// Contoh Struktur Kontrol: FOR
 	fmt.Println("\nMenampilkan angka 1 sampai 5 menggunakan for:")
 	for i := 1; i <= 5; i++ {
 		fmt.Println("Angka:", i)
