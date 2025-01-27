@@ -2,9 +2,13 @@ package main
 
 import "fmt"
 
+// Fungsi untuk menghitung luas persegi panjang
+
 func luasPersegiPanjang(lebar float64, panjang float64){
 	return lebar*panjang
 }
+
+// Fungsi untuk menampilkan salam
 
 func sapa(nama string) string {
 	return "halo" + nama + "selamat datang di program go"
