@@ -4,7 +4,7 @@ import "fmt"
 
 // Fungsi untuk menghitung luas persegi panjang
 
-func luasPersegiPanjang(lebar float64, panjang float64){
+func luasPersegiPanjang(lebar float64, panjang float64) float64 {
 	return lebar*panjang
 }
 
@@ -35,7 +35,7 @@ func main(){
 	luas := luasPersegiPanjang(lebar, panjang)
 	fmt.Println("luas persegi panjang :", luas)
 
-	fmt.Println(sapa)
+	fmt.Println(sapa(nama))
 
 
 	
