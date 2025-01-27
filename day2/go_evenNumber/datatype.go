@@ -22,11 +22,13 @@ func main(){
 	var tinggi float64 = 170.5		//tipe data float
 	var aktif bool = true			//tipe data boolean
 
-
+	//menampillkan nilai variable
 	fmt.Println("nama :", nama)
 	fmt.Println("umur :", umur)
 	fmt.Println("tinggi :", tinggi)
 	fmt.Println("status aktif :", aktif)
+
+	//proses perhitungan luas persegi panjang
 
 	panjang := 10.5
 	lebar := 5.2
