@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//rumus faktorial
 func faktorial(n int) int {
 	result := 1 
 	for i := 1; i <= n; i++{
@@ -9,6 +10,8 @@ func faktorial(n int) int {
 	}
 	return result
 }
+
+//function tampilan kalkulator sederhana
 
 func main(){
 	var num1, num2 float64
@@ -18,7 +21,7 @@ func main(){
 	fmt.Println("kalkulator sederhana")
 	fmt.Println("masukan operator atau pilih ! untuk faktorial (+,-,*,/,!) ")
 	fmt.Scanln(&operator)
-	
+	// if statement function
 	if operator == "!" {
 		fmt.Println("masukan angka yang ingin difaktorialkan :")
 		fmt.Scanln(&num)
@@ -36,7 +39,9 @@ func main(){
 	
 		fmt.Println("masukan angka kedua")
 		fmt.Scanln(&num2)
-	
+
+		//switch case function 
+		
 		switch operator {
 		case "+" :
 			fmt.Printf("hasil akhir : %.2f\n", num1+num2)
