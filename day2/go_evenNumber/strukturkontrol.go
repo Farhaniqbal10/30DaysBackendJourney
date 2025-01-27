@@ -4,6 +4,7 @@ import "fmt"
 
 func main () {
 
+	// Contoh Struktur Kontrol: IF
 	nilai := 85
 	fmt.Println("Nilai Anda:", nilai)
 	if nilai >= 90 {
