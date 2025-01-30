@@ -8,6 +8,11 @@ type Pengguna struct {
 
 func main () {
  var pengguna Pengguna
+  pengguna.ID = "1001"
+  pengguna.Nama = "geboy"
+  pengguna.Email = "geboy123@gmail.com"
+
+  fmt.Println(pengguna)
   
   }
 
