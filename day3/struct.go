@@ -2,12 +2,16 @@ package main
 
 import "fmt"
 
-type customer struct {
+type Customer struct {
   Name, Address string
-  age int
+  Age int
   
 }
 
 func main(){
+  var farhan Customer
+  farhan.Name = "farhan"
+  farhan.Address ="perum tti"
+  farhan.Age = 22
   
 }
