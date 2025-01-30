@@ -14,10 +14,11 @@ func main () {
 
   fmt.Println(pengguna)
 
+  //penulisan lain untuk struct
   pengguna := Pengguna {
-    ID = "1001"
-    Nama = "farhan"
-    email = "farhaniqbal10@gmail.com"
+    ID = "1001",
+    Nama = "farhan",
+    email = "farhaniqbal10@gmail.com",
     }
   }
 
