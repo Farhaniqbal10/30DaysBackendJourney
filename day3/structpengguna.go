@@ -13,6 +13,11 @@ func main () {
   pengguna.Email = "geboy123@gmail.com"
 
   fmt.Println(pengguna)
-  
+
+  pengguna := Pengguna {
+    ID = "1001"
+    Nama = "farhan"
+    email = "farhaniqbal10@gmail.com"
+    }
   }
 
