@@ -13,5 +13,9 @@ func main(){
   farhan.Name = "farhan"
   farhan.Address ="perum tti"
   farhan.Age = 22
-  
+
+  fmt.Println(farhan)
+  fmt.Println(farhan.Nama)
+  fmt.Println(farhan.Address)
+  fmt.Println(farhan.Age)
 }
