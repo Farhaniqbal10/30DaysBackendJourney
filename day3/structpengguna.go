@@ -7,6 +7,7 @@ type Pengguna struct {
   }
 
 func main () {
-
+ var pengguna Pengguna
+  
   }
 
