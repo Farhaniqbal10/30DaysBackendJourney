@@ -18,4 +18,12 @@ func main(){
   fmt.Println(farhan.Nama)
   fmt.Println(farhan.Address)
   fmt.Println(farhan.Age)
+ 
+  //another way to build struct
+
+  farhan := Customer {
+    Name : "Farhan",
+    Address : "Perum tti",
+    Age : 22,
+    }
 }
