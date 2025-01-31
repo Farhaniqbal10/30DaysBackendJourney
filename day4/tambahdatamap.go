@@ -35,5 +35,10 @@ func main {
       break  
       }
     }
+
+  fmt.Println("data pengguna")
+  for i user := range users{
+    fmt.Printf("%d. nama: %s, umur: %d, email:%s\n", i+1, user["nama"], user["umur"], user["email"])  
+  }
   
   }
