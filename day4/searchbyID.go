@@ -4,9 +4,9 @@ import "fmt"
 
 type user struct{
   Id int
-  nama string
-  umur int
-  email string  
+  Nama string
+  Umur int
+  Email string  
   }
 
 func main() {
