@@ -58,11 +58,18 @@ func main() {
             fmt.Println("\nData Pengguna Ditemukan:")
             fmt.Printf("ID: %d | Nama: %s, Umur: %d, Email: %s\n", user.ID, user.Nama, user.Umur, user.Email)
             found = true
+        var carilagi string 
+          fmt.Println("cari lagi ? (y/n) :")
+          fmt.Scanln(&carilagi)
+          if lagi != "y" {
             break
+            }
         }
     }
 
     if !found {
         fmt.Println("ID tidak ditemukan!")
     }
+
+
 }
