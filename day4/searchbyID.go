@@ -61,7 +61,7 @@ func main() {
                 fmt.Println("\nData Pengguna Ditemukan:")
                 fmt.Printf("ID: %d | Nama: %s, Umur: %d, Email: %s\n", user.Id, user.Nama, user.Umur, user.Email)
                 found = true
-                break // Keluar dari loop setelah data ditemukan
+                break 
             }
         }
 
@@ -74,7 +74,7 @@ func main() {
         fmt.Print("\nCari lagi? (y/n): ")
         fmt.Scanln(&carilagi)
         if carilagi != "y" {
-            break // Keluar dari loop pencarian
+            break 
         }
     }
 }
