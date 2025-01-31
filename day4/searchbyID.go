@@ -16,6 +16,7 @@ func main() {
     var Id int 
     var nama string
     var umur int
+    var email string
 
   
         fmt.Print("Masukkan ID: ")
