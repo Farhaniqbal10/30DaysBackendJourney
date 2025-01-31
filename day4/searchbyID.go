@@ -16,7 +16,6 @@ func main() {
     var Id int 
     var nama string
     var umur int
-    }
 
   
         fmt.Print("Masukkan ID: ")
@@ -45,7 +44,7 @@ func main() {
 
  fmt.Println("\nData Pengguna:")
     for _, user := range users {
-        fmt.Printf("ID: %d | Nama: %s, Umur: %d, Email: %s\n", user.ID, user.Nama, user.Umur, user.Email)
+        fmt.Printf("ID: %d | Nama: %s, Umur: %d, Email: %s\n", user.Id, user.Nama, user.Umur, user.Email)
     }
 
     // Pencarian pengguna berdasarkan ID
