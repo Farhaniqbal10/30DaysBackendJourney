@@ -31,7 +31,7 @@ func main() {
         fmt.Print("Masukkan Email: ")
         fmt.Scanln(&email)
 
-    user = append(users, User{Id: id, Nama: nama, Umur: umur, Email: email})
+    users = append(users, User{Id: id, Nama: nama, Umur: umur, Email: email})
   
         var lagi string
         fmt.Print("Tambah lagi? (y/n): ")
@@ -55,22 +55,25 @@ func main() {
 
     var found bool
     for _, user := range users {
-        if user.ID == searchID {
+        if user.Id == searchID {
             fmt.Println("\nData Pengguna Ditemukan:")
-            fmt.Printf("ID: %d | Nama: %s, Umur: %d, Email: %s\n", user.ID, user.Nama, user.Umur, user.Email)
+            fmt.Printf("ID: %d | Nama: %s, Umur: %d, Email: %s\n", user.Id, user.Nama, user.Umur, user.Email)
             found = true
-        var carilagi string 
-          fmt.Println("cari lagi ? (y/n) :")
-          fmt.Scanln(&carilagi)
-          if lagi != "y" {
             break
-            }
+      
         }
     }
 
     if !found {
         fmt.Println("ID tidak ditemukan!")
     }
+
+    var carilagi string 
+          fmt.Println("cari lagi ? (y/n) :")
+          fmt.Scanln(&carilagi)
+          if lagi != "y" {
+            break
+            }
 
 
 }
