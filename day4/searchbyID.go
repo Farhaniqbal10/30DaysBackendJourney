@@ -14,8 +14,8 @@ func main() {
 
   for {
     var Id int 
-    nama string
-    umur int
+    var nama string
+    var umur int
     }
 
   
