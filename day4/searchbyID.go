@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type user struct{
+type User struct{
   Id int
   Nama string
   Umur int
@@ -31,7 +31,7 @@ func main() {
         fmt.Print("Masukkan Email: ")
         fmt.Scanln(&email)
 
-    user = append(users, User{ID: id, Nama: nama, Umur: umur, Email: email})
+    user = append(users, User{Id: id, Nama: nama, Umur: umur, Email: email})
   
         var lagi string
         fmt.Print("Tambah lagi? (y/n): ")
