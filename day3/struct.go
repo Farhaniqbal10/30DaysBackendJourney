@@ -21,16 +21,16 @@ func main(){
   farhan.sayHi("adya")
   
 
-  // fmt.Println(farhan)
-  // fmt.Println(farhan.Nama)
-  // fmt.Println(farhan.Address)
-  // fmt.Println(farhan.Age)
+  fmt.Println(farhan)
+  fmt.Println(farhan.Nama)
+  fmt.Println(farhan.Address)
+  fmt.Println(farhan.Age)
  
-  //another way to build struct
+  another way to build struct
 
-  // farhan := Customer {
-  //   Name : "Farhan",
-  //   Address : "Perum tti",
-  //   Age : 22,
-  //   }
+  farhan := Customer {
+    Name : "Farhan",
+    Address : "Perum tti",
+    Age : 22,
+    }
 }
