@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main {
-  //gunakan interface jika tipe data nya beda beda
+  //gunakan interface jika tipe data nya berbeda
  var users []map[string]interface{}
   for {
     var nama string
