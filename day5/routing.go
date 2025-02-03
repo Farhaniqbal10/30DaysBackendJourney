@@ -28,7 +28,7 @@ func main() {
   fmt.Println("server ini berjalan di port 8081)
   err := http.ListenAndServe(":8081", mux)
               if err != nil {
-                
+                fmt.Println("server error :", err)
                 }
   
   }
