@@ -16,3 +16,9 @@ package profilehandler (w http.ResponseWriter, r *http.Request){
 package apihandler (w http.ResponseWritter, r *http.Request){
   fmt.Fprintf(w "ini tampilan api handler")
   }
+
+func main() {
+  mux := http.NewResponseMux()
+
+  mux.HandleFunc("/", homehandler)
+  }
