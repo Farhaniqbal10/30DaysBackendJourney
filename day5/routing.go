@@ -21,6 +21,7 @@ func main() {
   mux := http.NewResponseMux()
 
   mux.HandleFunc("/", homehandler)
-  mux.HandleFUnc("/home", homehandler)
-  
+  mux.HandleFunc("/home", homehandler)
+  mux.HandleFunc("/profile", profilehandler)
+  mux.HandleFunc("/api", apihandler)
   }
