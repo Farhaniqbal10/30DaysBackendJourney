@@ -17,3 +17,9 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(response)
 
 }
+
+
+func main() {
+	http.HandleFunc("/hello", helloHandler) // Endpoint /hello
+	http.ListenAndServe(":3000", nil)       // Jalankan server di port 3000
+}
