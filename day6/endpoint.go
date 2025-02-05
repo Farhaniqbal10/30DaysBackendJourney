@@ -18,6 +18,13 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func greetHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type","application/json")
+
+	
+	
+}
+
 
 func main() {
 	http.HandleFunc("/hello", helloHandler) // Endpoint /hello
