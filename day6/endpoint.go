@@ -25,6 +25,9 @@ func greetHandler(w http.ResponseWriter, r *http.Request) {
 
 	vars := mux.Vars(r)
 	name := vars["name"]
+
+	response := map[string]string{"message" : "hello" + name + "!"}
+	json.NewEncoder(w).Encode(response)
 	
 }
 
