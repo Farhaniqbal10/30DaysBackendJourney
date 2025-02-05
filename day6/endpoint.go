@@ -23,15 +23,8 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 func greetHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type","application/json")
 
-	pathParts := strings.Split(r.URL.Path, "/")
-	if len(pathParts) < 3 || pathParts [2] == "" {
-	http.Error(w, "nama tidak ditemukan", http.StatusBadRequest)
-		return
-		}
-
-	name := pathParts[2]
-	response := map[string]string{"message": "hello, " + name + "!" }
-	json.NewEncoder(w).Encode(response)
+	vars := mux.Vars(r)
+	name := vars["name"]
 	
 }
 
