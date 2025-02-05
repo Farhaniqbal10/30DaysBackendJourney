@@ -33,7 +33,7 @@ func greetHandler(w http.ResponseWriter, r *http.Request) {
 
 
 func main() {
-	http.HandleFunc("/greet/", greetHandler) 
+	r.HandleFunc("/greet/", greetHandler).Methods("GET")
 	http.HandleFunc("/hello", helloHandler) // Endpoint /hello
 	http.ListenAndServe(":3000", nil)       // Jalankan server di port 3000
 }
