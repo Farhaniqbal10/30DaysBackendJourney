@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"net/http"
+	"strings"
 )
 
 
@@ -21,12 +22,21 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 func greetHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type","application/json")
 
-	
+	pathParts := strings.Split(r.URL.Path, "/")
+	if len(pathParts) < 3 || pathParts [2] == "" {
+	http.Error(w, "nama tidak ditemukan", http.StatusBadRequest)
+		return
+		}
+
+	name := pathParts[2]
+	response := map[string]string{"message": "hello, " + name + "!" }
+	json.NewEncoder(w).Encode(response)
 	
 }
 
 
 func main() {
+	http.handleFunc("/greet/", greetHandler) 
 	http.HandleFunc("/hello", helloHandler) // Endpoint /hello
 	http.ListenAndServe(":3000", nil)       // Jalankan server di port 3000
 }
