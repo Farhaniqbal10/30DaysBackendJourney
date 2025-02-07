@@ -49,6 +49,7 @@ func main() {
   r := mux.NewRouter()
   r.HandleFunc("/books", getBooks).Methods("GET")
   r.HandleFunc("/books", createBook).Methods("POST")
+  r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
   }
 
   }
