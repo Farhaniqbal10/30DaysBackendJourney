@@ -34,5 +34,16 @@ func createBook(w http.ResponseWriter, r *http.Request){
   json.NewEncoder(w).Encode(book)
   }
 
+func deleteBook(w http.ResponseWriter, r *http.Request) {
+  params := mux.Vars(r)
+  id := params["id"]
+  if _, exists := books[id]; !exists {
+    http.Error(w, "Book not found", http.StatusNotFound)
+    return
+    }
+  delete(books, id)
+  w.WriterHeader(http.StatusNoContent)
+  }
+
 
   }
