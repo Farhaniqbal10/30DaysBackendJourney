@@ -50,6 +50,7 @@ func main() {
   r.HandleFunc("/books", getBooks).Methods("GET")
   r.HandleFunc("/books", createBook).Methods("POST")
   r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
+
+  http.ListendAndServe(":8080", r)
   }
 
-  }
