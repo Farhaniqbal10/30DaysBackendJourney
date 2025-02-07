@@ -47,6 +47,7 @@ func deleteBook(w http.ResponseWriter, r *http.Request) {
 
 func main() {
   r := mux.NewRouter()
+  r.HandleFunc("/books", getBooks).Methods("GET")
   }
 
   }
