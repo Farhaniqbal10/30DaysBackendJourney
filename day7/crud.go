@@ -22,3 +22,17 @@ func getBooks(w http.ResponseWriter, r *http.Request){
     }
   json.NewEncoder(w).Encode(bookList)
   }
+
+func createBook(w http.ResponseWriter, r *http.Request){
+  w.Header().Set("Content-Type", "application/json")
+  var book Book
+  if err := json.NewDecoder(r.Body).Decode(&book); err != nil {
+    http.Error(w, err.Error(), http.StatusBadRequest)
+    return
+    }
+  books[book.ID] = book
+  json.NewEncoder(w).Encode(book)
+  }
+
+
+  }
