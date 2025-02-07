@@ -6,3 +6,6 @@ import (
 "github.com/gorilla/mux"
 )
 
+type Book struct {
+
+  }
