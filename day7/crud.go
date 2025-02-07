@@ -13,3 +13,12 @@ type Book struct {
   }
 
 var books = make(map[string]Book)
+
+func getBooks(w http.ResponseWriter, r *http.Request){
+  w.Header().Set("Content-Type", "application/json")
+  var bookList []Book
+  for _, book := range books {
+      bookList = append(bookList, book)
+    }
+  json.NewEncoder(w).Encode(bookList)
+  }
